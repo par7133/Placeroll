@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en-US" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	
+  <meta charset="UTF-8"/>
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  
+<!--
+    Copyright 2021, 2028 NuMode
+
+    This file is part of Placeroll.
+
+    Placeroll is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    Placeroll is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with Placeroll. If not, see <https://www.gnu.org/licenses/>.
+ -->
+     
+  <title>Placeroll! Everyone its place idea!</title>
+	
+  <link rel="shortcut icon" href="/Public/static/favicon.ico" />
+    
+  <meta name="description" content="Welcome to Placeroll! Let everyone have its place idea."/>
+  <meta name="author" content="NuMode"/> 
+  <meta name="robots" content="index,follow"/>
+  <meta name="keywords" content="Placeroll,place,photos,pictures,on,premise,solution"/>
+  
+  <script src="/Public/static/js/jquery-3.6.0.min.js" type="text/javascript"></script>
+  <script src="/Public/static/js/common.js" type="text/javascript"></script>
+  <script src="/Public/static/js/bootstrap.min.js" type="text/javascript"></script>
+  
+  <link href="/Public/static/css/bootstrap.min.css" type="text/css" rel="stylesheet">
+  <link href="/Public/static/css/style.css?v=1631827555" type="text/css" rel="stylesheet">
+
+<style>
+#langhidecn {
+  color: #db4949;
+  font-wight:900;
+  text-align:left;  
+  display:none;
+}
+#langhideen {
+  color: #db4949;
+  font-wight:900;
+  text-align:left;
+  display:none;
+}
+#langhideit {
+  color: #db4949;
+  font-wight:900;
+  text-align:left;
+  display:none;
+}
+</style>
+
+  <script>
+  
+  function hideTitle() {
+    $("#myh1").hide("slow");
+  }
+  
+  function startApp() {
+    
+    $("#HCsplash").css("display","none");
+    //$("#HCsplash").hide("slow");
+    $(document.body).css("background","#ffffff");
+	
+    //$("#originsDisplay").show();  
+	  
+    $("#frmHC").show();
+  }			
+
+  function _startApp() {
+    setTimeout("startApp()", 1000);    
+  }
+
+  function setOriginsPos() {
+    h=parseInt(window.innerHeight);
+    w=parseInt(window.innerWidth);
+    mytop = parseInt(window.innerHeight - ($("#originsDisplay").height() + 60));
+    $("#originsDisplay").css("top", mytop+"px");
+    setTimeout("hideOrigins()",15000);
+  }
+
+  function hideOrigins() {
+    $("#originsDisplay").css("visibility","hidden");
+  }  
+	  
+  window.addEventListener("load", function() {
+	
+    $("#frmHC").hide();
+    
+    setTimeout("setOriginsPos()", 500);	  
+	  
+    //Splash
+    $("#HCsplash").show();	
+
+  }, true);
+
+  window.addEventListener("load", function() {
+      
+    // Fisnished the Intro load the app..
+    //document.getElementById("vplayer").onended=_startApp;
+    setTimeout("_startApp()", 4000);
+  
+  });
+
+  </script>    
+       
+</head>
+<body style="background:#0d0d0d;">
+
+<div id="langhideen">
+   <br>
+   &nbsp;We have detected that you maybe speak English, do you want to be redirected to the english site? <button onclick="$('#langhideen').hide();">NO</button>&nbsp;<button onclick="window.open('https://placeroll.numode-foss.eu','_self');">OK</button>
+   <br><br>
+</div>
+
+<div id="langhidecn">
+   <br>
+   &nbsp;We have detected that you maybe speak Chinese, do you want to be redirected to the chinese site? <button onclick="$('#langhidecn').hide();">NO</button>&nbsp;<button onclick="window.open('https://placeroll.numode-foss.eu/cn','_self');">OK</button>
+   <br><br>
+</div>
+
+<div id="HCsplash" style="padding-top: 40px; text-align:center;co-lor:#d4b0dc;color:#FFFFFF;font-family:'Press Start 2P';">
+    <div id="myh1" style="position:relative; top:0px;"><H1>Placeroll!</H1></div><br><br>
+    <img src="/Public/static/res/AFlogo.png" style="width:210px;">
+</div>  
+  
+<form id="frmHC" method="POST" target="_self" enctype="multipart/form-data" style="display:none;">
+
+<div class="header" style="margin-top:18px;margin-bottom:18px;">
+   <a href="http://fooddish.numode-foss.eu" target="_self" style="color:#000000; text-decoration: none;">&nbsp;<img src="/Public/static/res/AFlogo.png" style="width:22px;">&nbsp;Placeroll</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://github.com/par7133/Fooddish" style="color:#000000;"><span style="color:#119fe2">on</span> github</a>
+	<!--&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="mailto:code@gaox.io" style="color:#000000;"><span style="color:#119fe2">for</span> feedback</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="tel:+39-378-0812391" style="font-size:13px;background-color:#15c60b;border:2px solid #15c60b;color:#000000;height:27px;text-decoration:none;">&nbsp;&nbsp;get support&nbsp;&nbsp;</a>-->
+</div>
+	
+<div style="clear:both; padding:8px; width:100%; height:110px; overflow-y:auto; border-right: 1px solid #2c2f34; text-align:center;">
+	<div style="float:left;width:160px;padding-left:10px;text-align: left;">
+	  <a href="https://github.com/par7133/Placeroll/archive/refs/tags/v1.0.5.zip">Rel. 1.0.5 (zip)</a><br>
+	  <a href="https://github.com/par7133/Placeroll/archive/refs/tags/v1.0.5.tar.gz">Rel. 1.0.5 (tar.gz)</a><br>
+	</div>
+    <img src="/Public/static/res/AFgenius.png" alt="AG Genius" title="AG Genius" style="float:left;height:120px;position:relative; left:+6px; border: 1px dashed #EEEEEE;">
+    &nbsp;<br><br><br>
+    <br><br><br>
+</div>
+
+<div style="width:100%; height:750px; padding:8px;">
+	
+	<div id="splash" style="border-radius:20px; position:relative; left:+3px; width:98%; background-color:#f0f8fb; padding: 20px; margin-bottom:8px;">	
+	
+	   <button type="button" class="close" aria-label="Close" onclick="close-Splash();" style="position:relative; left:-10px;">
+        <span aria-hidden="true">&times;</span>
+     </button>
+	
+Ciao e benvenuto su Placeroll!<br><br> 
+
+Placeroll è un software on-premise leggero e semplice per creare e gestire la tua galleria di luoghi.<br><br> 
+
+Placeroll è rilasciato sotto licenza GPLv3, viene fornito AS-IS e non ci assumiamo alcuna responsabilità per il suo utilizzo improprio.<br><br> 
+
+Primo passaggio, utilizzare la casella della password e i campi salt per creare l'hash da inserire nel file di configurazione. Ricordati di impostare manualmente lì anche il valore del sale.<br><br> 
+
+Poiché eseguirai Placeroll nel contesto del processo PHP, utilizzando un server Web limitato o un utente phpfpm, devi seguire alcune semplici direttive per una prima configurazione ottimale:<br> 
+<ol> 
+<li>Verifica i permessi di scrittura della tua cartella "dati" nel percorso privato della tua web app; e imposta il suo percorso nel file di configurazione.</li> 
+<li>Imposta il tuo HOST e WEBDIR.</li> 
+<li>Imposta la lingua predefinita.</li> 
+<li>Imposta FILE_MAX_SIZE (ricorda che alcune impostazioni PHP potrebbero limitare anche il comportamento di caricamento di Placeroll)</li> 
+<li>Imposta BLOG_MAX_POSTS per limitare il numero di post visibili nel blog.</li> 
+<li>Imposta PAGINATION su true o false per garantire un maggiore accesso pubblico ai tuoi dati.</li> 
+</ol> 
+
+<br> 
+
+Puoi accedere al tuo avatar da http://yoursitename.xyz/&lt;your_avatar&gt;. Accedi con la password per la vista amministratore. Trascina tutte le tue risorse nella finestra del browser.<br><br>
+
+      Screenshot:<br><br>
+		
+	   <a href="/Public/static/res/screenshot1.png" target="_blank"><img src="/Public/static/res/screenshot1.png" style="height:230px;width:350px;margin-top:7px;"></a>&nbsp;&nbsp;<a href="/Public/static/res/screenshot2.png" target="_blank"><img src="/Public/static/res/screenshot2.png" style="height:230px;width:350px;margin-top:7px;"></a><br><br>
+	
+	   Feedback: <a href="mailto:code@gaox.io">code@gaox.io</a>
+	
+       <br><br><br><br><br><br><br>
+     
+	</div>	
+  	
+	<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>		
+	
+</div>
+
+</form>
+
+<div id="originsDisplay" style="display:none;">
+      <br>
+       &nbsp;<span class="originLabel">Coding:</span>&nbsp;Italy<br>         
+       &nbsp;<span class="originLabel">Server:</span>&nbsp;United States&nbsp;<br>
+       &nbsp;<span class="originLabel"><a href="http://metrica.yandex.com" class="bbb">Metrics</a>:</span>&nbsp;Russia&nbsp;<br>
+      <br>
+</div>   
+	
+<div class="footer">
+<div id="footerCont">&nbsp;</div>
+<div id="footer"><span style="background:#E1E1E1;color:black;opacity:1.0;margin-right:10px;">&nbsp;&nbsp;<a href="https://numode.eu/dd.html">Disclaimer</a>&nbsp;&nbsp;A <a href="http://numode.eu">NuMode</a> project and <a href="http://demo.numode.eu">WYSIWYG</a> system. CC</span></div>	
+</div>	
+	
+<script>
+  
+function setFooterPos2() {
+  if (document.getElementById("footerCont")) {
+    //if ($("#Password").val() === "") {  
+    //    tollerance = 48;
+    //  } else {
+    //  tollerance = 15;
+    //}
+    tollerance = 22;  	  
+    $("#footerCont").css("top", parseInt( window.innerHeight - $("#footerCont").height() - tollerance ) + "px");
+    $("#footer").css("top", parseInt( window.innerHeight - $("#footer").height() - tollerance + 6) + "px");
+  }
+}
+setFooterPos2();
+
+//window.addEventListener("load", function() {
+//    
+//  setTimeout("setFooterPos2()", 4000);
+//
+//}, true);
+  
+</script>  
+
+<script>
+    function isEnglish() {
+      ret = false;
+      lang = window.navigator.language;
+      lang = lang.toLowerCase();
+      //alert(lang);
+      if (lang === "en" || lang === "en-us" || lang === "en-gb" || lang === "english") {
+        ret = true;
+      }
+      return ret;
+    }
+
+    function isChinese() {
+      ret = false;
+      lang = window.navigator.language;
+      lang = lang.toLowerCase();
+      if (lang === "cn" || lang === "zh-cn" || lang === "chinese" || lang === "chinese simplified" || lang === "mandarin") {
+        ret = true;
+      }
+      return ret;
+    }
+
+    if (isEnglish()) {
+      $("#langhideen").show();
+    }
+
+    if (isChinese()) {
+      $("#langhidecn").show();
+    }
+</script>
+
+</body>	 
+</html>	 
+
