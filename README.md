@@ -8,7 +8,7 @@
 
 Hello and welcome to Placeroll!<br>
 	  
-Placeroll is a light, simple, software on premise to build and own your food gallery.<br>
+Placeroll is a light, simple, software on premise to build and own your place gallery.<br>
 	   
 Placeroll is released under GPLv3 license, it is supplied AS-IS and we do not take any responsibility for its misusage.<br>
 	   
