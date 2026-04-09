@@ -41,4 +41,4 @@ To help please donate by clicking <a href="https://gaox.io/l/dona1">https://gaox
 
 ![Placeroll in action #2](/Public/static/res/screenshot2.png)<br>
 
-Feedback: <a href="mailto:code@gaox.eu" style="color:#e6d236;">code@gaox.eu</a>
+Feedback: <a href="mailto:code@gaox.io" style="color:#e6d236;">code@gaox.io</a>
